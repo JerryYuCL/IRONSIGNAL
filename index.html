@@ -11,7 +11,7 @@
     :root {
       --secondary-bg: #23272f;
       --card-bg: #20232b;
-      --navbar-bg: #0a0a0a; /* Darker Nav */
+      --navbar-bg: #0a0a0a;
       --accent: #7d4df6;
       --accent-hover: #a885ff;
       --text-main: #f7f8fa;
@@ -19,6 +19,7 @@
       --border: #282c34;
       --shadow: 0 4px 24px rgba(0,0,0,0.18);
       --radius: 12px;
+      --logo-box-bg: #0a0a0a;
       --font-primary: 'Inter', 'Roboto', Arial, sans-serif;
       --font-secondary: 'Roboto', 'Inter', Arial, sans-serif;
     }
@@ -96,6 +97,20 @@
       padding: 2.2rem 2rem 2.5rem 2rem;
       text-align: center;
     }
+    .hero-logo {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+    .hero-logo img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      background: transparent;
+      border-radius: 16px;
+      box-shadow: none;
+      border: none;
+      display: inline-block;
+    }
     .hero h1 {
       font-size: 2.6rem;
       letter-spacing: -1.2px;
@@ -144,7 +159,6 @@
     .subscribe-form button:hover {
       background: var(--accent-hover);
     }
-    /* PRODUCT RECTANGLES SECTION */
     .product-rectangles {
       width: 100%;
       max-width: 1200px;
@@ -180,21 +194,6 @@
       text-align: center;
       box-sizing: border-box;
     }
-    .rect-card:hover {
-      transform: translateY(-8px) scale(1.025);
-      box-shadow: 0 8px 32px rgba(125,77,246,0.14);
-      border-color: var(--accent, #7d4df6);
-    }
-    .rect-card img {
-      width: 78px;
-      height: 78px;
-      object-fit: contain;
-      margin-bottom: 1.1rem;
-      border-radius: 10px;
-      background: #181a20;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.14);
-      border: 2px solid var(--border, #282c34);
-    }
     .rect-card h3 {
       font-size: 1.13rem;
       margin: 0 0 0.65rem 0;
@@ -207,7 +206,16 @@
       margin: 0;
       line-height: 1.5;
     }
-    /* AVAILABLE ALL OVER THE GLOBE SECTION */
+    .rect-card img {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      margin-bottom: 1.1rem;
+      border-radius: 10px;
+      background: #181a20;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+      border: 2px solid var(--border, #282c34);
+    }
     .available-global {
       width: 100%;
       max-width: 1200px;
@@ -362,7 +370,8 @@
       .hero {
         padding: 1rem 0.4rem 1.5rem 0.4rem;
       }
-      .rect-card img {
+      .rect-card img,
+      .hero-logo img {
         width: 58px;
         height: 58px;
       }
@@ -386,6 +395,9 @@
   <main>
     <!-- HERO/SUBSCRIBE SECTION -->
     <section class="hero">
+      <div class="hero-logo">
+        <img src="assets/logo.png" alt="IRONSIGNAL Logo">
+      </div>
       <h1>IRONSIGNAL</h1>
       <p class="subtitle" style="font-weight:700; font-size:1.35rem;">SECURE YOUR TECH. SECURE YOUR BODY.</p>
       <p style="margin-top:1.8rem; font-size:1.08rem; color:var(--text-muted);">
