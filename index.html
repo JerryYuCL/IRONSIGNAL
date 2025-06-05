@@ -90,7 +90,7 @@
     .hero {
       width: 100%;
       max-width: 600px;
-      background: #0a0a0a; /* Changed to pure black */
+      background: #0a0a0a; /* pure black */
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       margin: 3.5rem auto 2rem auto;
@@ -102,8 +102,9 @@
       margin-top: 0.5rem;
     }
     .hero-logo img {
-      width: 90px;
-      height: 90px;
+      width: 160px;
+      height: 160px;
+      max-width: 92vw;
       object-fit: contain;
       background: transparent;
       border-radius: 16px;
@@ -111,17 +112,12 @@
       border: none;
       display: inline-block;
     }
-    .hero h1 {
-      font-size: 2.6rem;
-      letter-spacing: -1.2px;
-      font-family: var(--font-secondary);
-      margin-bottom: 0.7rem;
-      font-weight: 700;
-    }
     .hero .subtitle {
       color: var(--text-muted);
       font-size: 1.25rem;
       margin-bottom: 2.3rem;
+      font-weight: 700;
+      font-size: 1.35rem;
     }
     .subscribe-form {
       display: flex;
@@ -398,8 +394,7 @@
       <div class="hero-logo">
         <img src="assets/logo.png" alt="IRONSIGNAL Logo">
       </div>
-      <h1>IRONSIGNAL</h1>
-      <p class="subtitle" style="font-weight:700; font-size:1.35rem;">SECURE YOUR TECH. SECURE YOUR BODY.</p>
+      <p class="subtitle">SECURE YOUR TECH. SECURE YOUR BODY.</p>
       <p style="margin-top:1.8rem; font-size:1.08rem; color:var(--text-muted);">
         IRONSIGNAL delivers precision tools for a world that moves fast and demands more—
         We create essentials for those who value security — both digital and physical.
