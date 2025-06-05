@@ -90,7 +90,7 @@
     .hero {
       width: 100%;
       max-width: 600px;
-      background: #0a0a0a; /* pure black */
+      background: #0a0a0a;
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       margin: 3.5rem auto 2rem auto;
@@ -102,9 +102,10 @@
       margin-top: 0.5rem;
     }
     .hero-logo img {
-      width: 160px;
-      height: 160px;
-      max-width: 92vw;
+      width: 800px;
+      height: 800px;
+      max-width: 96vw;
+      max-height: 60vh;
       object-fit: contain;
       background: transparent;
       border-radius: 16px;
@@ -296,6 +297,13 @@
         padding: 1.3rem 0.7rem;
       }
     }
+    @media (max-width: 900px) {
+      .hero-logo img {
+        width: 94vw;
+        height: auto;
+        max-height: 48vw;
+      }
+    }
     @media (max-width: 600px) {
       .rect-row {
         grid-template-columns: repeat(2, 1fr);
@@ -308,6 +316,11 @@
       }
       .available-global-box {
         padding: 1rem 0.4rem;
+      }
+      .hero-logo img {
+        width: 90vw;
+        height: auto;
+        max-height: 60vw;
       }
     }
     footer {
