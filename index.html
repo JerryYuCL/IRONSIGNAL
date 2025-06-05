@@ -99,14 +99,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
     .hero-logo {
-      margin-bottom: 1rem;
-      margin-top: 0.5rem;
-      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+      width: 100%;
     }
     .hero-logo img {
       width: 800px;
@@ -119,8 +120,14 @@
       box-shadow: none;
       border: none;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+    }
+    .hero-title {
+      font-size: 2.6rem;
+      letter-spacing: -1.2px;
+      font-family: var(--font-secondary);
+      margin-bottom: 0.7rem;
+      font-weight: 700;
+      color: var(--text-main);
     }
     .hero .subtitle {
       color: var(--text-muted);
@@ -416,6 +423,7 @@
       <div class="hero-logo">
         <img src="assets/logo.png" alt="IRONSIGNAL Logo">
       </div>
+      <h1 class="hero-title">IRONSIGNAL</h1>
       <p class="subtitle">SECURE YOUR TECH. SECURE YOUR BODY.</p>
       <p style="margin-top:1.8rem; font-size:1.08rem; color:var(--text-muted);">
         IRONSIGNAL delivers precision tools for a world that moves fast and demands more—
