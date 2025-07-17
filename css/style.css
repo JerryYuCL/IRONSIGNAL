@@ -1,0 +1,11 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('../assets/custom-bg.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-main);
+  font-family: var(--font-primary);
+  display: flex;
+  flex-direction: column;
+}
